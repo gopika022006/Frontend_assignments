@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript Counter</title>
+    </head>
+    <body>
+
+        <h2> Counter : <span id="count">0</span></h2>
+
+        <button id ="increment">Increment</button>
+        <button id="decrement">Decrement</button>
+        <button id="reset">Reset</button>
+
+        <script>
+            let count = 0;
+
+            function getVariables() {
+                return {
+                    a: Number(document.getElementById("a").value),
+                    b: Number(document.getElementById("b").value)
+                };
+            }
+
+            const incrementButton = document.getElementById("increment");
+            function increment() {
+                count++;
+                document.getElementById("count").innerText = count;
+            }
+
+            incrementButton.addEventListener("click", increment);
+
+            const decrementButton = document.getElementById("decrement");
+            function decrement() {
+                count--;
+                document.getElementById("count").innerText = count;
+            }
+
+            decrementButton.addEventListener("click", decrement);
+
+            const resetButton = document.getElementById("reset");
+            function reset() {
+                count = 0;
+                document.getElementById("count").innerText = count;
+            }
+
+            resetButton.addEventListener("click", reset);
+
+            
+
+        </script>
+    </body>
