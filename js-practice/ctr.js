@@ -22,7 +22,7 @@
 console.log(typeof []);
 
 {
-  let user = { name: "thani", age: 20 };
+  let user = { name: "gopi", age: 20 };
   const { name } = user;
   console.log(name);
 }
@@ -31,7 +31,7 @@ console.log(typeof []);
 {
   const a = "5";
   const b = "10";
-  const c = (b + a) - (a + b); // use + and - operators to convert string to number
+  const c = (b + a) - (a + b);
   console.log(c);
 }
 
@@ -39,7 +39,7 @@ console.log(typeof []);
 {
   const a = "5";
   const b = "10";
-  const c = (Number(b) * a) + (a * b); // use + and - operators to convert string to number
+  const c = (Number(b) * a) + (a * b);
   console.log(c);
 }
 
